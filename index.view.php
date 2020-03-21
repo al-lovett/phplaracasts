@@ -22,6 +22,11 @@
 
              </h1>
 
+             <h3>
+                <?= $person;?>
+
+             </h3>
+
        </header> 
     </body>
 </html>
