@@ -16,17 +16,25 @@
         </style>
     </head>
     <body>
-       <header>
-             <h1>
-             <?= $greeting;?>
 
-             </h1>
+        <ul>
+        
+            <?php foreach ($names as $name) :?>
+                    
+                <li><?= $name ?></li>
 
-             <h3>
-                <?= $person;?>
+            <?php endforeach;?>
+            
+            <br>
+            
+            <?php
+                foreach ($names as $name) {
+                    echo "<li>$name</li>";
 
-             </h3>
+                }
+            ?>
+        </ul>
 
-       </header> 
+
     </body>
 </html>
