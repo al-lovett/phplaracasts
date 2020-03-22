@@ -39,7 +39,7 @@ $task =[
     'title' => 'get nano chips removed',
     'due' => 'today',
     'assigned_to' => 'Al',
-    'completed' => false 
+    'completed' => true 
 ]; // title, due, assigned_to, completed
 
 require 'index.view.php';
