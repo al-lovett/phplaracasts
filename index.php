@@ -10,4 +10,13 @@ $names = [
 
 ];
 
+
+$animals = [
+    'Bird',
+    'Cat',
+    'Dog',
+    'Hamster',
+
+];
+
 require 'index.view.php';

@@ -26,13 +26,36 @@
             <?php endforeach;?>
             
             <br>
-            
+
             <?php
                 foreach ($names as $name) {
                     echo "<li>$name</li>";
 
                 }
             ?>
+
+            <br>
+            <p>List of Animals</p>
+            <br>
+
+
+            <?php foreach ($animals as $animal) :?>
+
+                <li><?= $animal ?></li>
+
+            <?php endforeach;?>
+
+            <br>
+
+            <?php
+                foreach ($animals as $animal) {
+                    echo "<li>$animal</li>";
+
+                }
+            ?>
+
+
+
         </ul>
 
 
