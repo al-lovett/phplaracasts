@@ -6,96 +6,90 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        header {
-            background: #e3e3e3;
-            padding: 2em;
-            text-align: center;
-        }
+        <link rel="stylesheet" type="text/css" href="style.css" / >
 
-        </style>
     </head>
     <body>
-
-        <ul>
-        
-            <?php foreach ($names as $name) :?>
-                    
-                <li><?= $name ?></li>
-
-            <?php endforeach;?>
+        <header>   
+            <ul>
             
-            <br>
+                <?php foreach ($names as $name) :?>
+                        
+                    <li><?= $name ?></li>
 
-            <?php
-                foreach ($names as $name) {
-                    echo "<li>$name</li>";
+                <?php endforeach;?>
+                
+                <br>
 
-                }
-            ?>
+                <?php
+                    foreach ($names as $name) {
+                        echo "<li>$name</li>";
 
-            <br>
-            <p>List of Animals</p>
-            <br>
+                    }
+                ?>
 
-
-            <?php foreach ($animals as $animal) :?>
-
-                <li><?= $animal ?></li>
-
-            <?php endforeach;?>
-
-            <br>
-
-            <?php
-                foreach ($animals as $animal) {
-                    echo "<li>$animal</li>";
-
-                }
-            ?>
+                <br>
+                <p>List of Animals</p>
+                <br>
 
 
+                <?php foreach ($animals as $animal) :?>
 
-        </ul>
-        
-        <ul>
-            <?php foreach ($person as $key => $feature)  : ?>
+                    <li><?= $animal ?></li>
 
-                <li><strong><?= $key; ?></strong><br> <?= $feature; ?></li>
+                <?php endforeach;?>
 
-            <?php endforeach; ?>
+                <br>
+
+                <?php
+                    foreach ($animals as $animal) {
+                        echo "<li>$animal</li>";
+
+                    }
+                ?>
 
 
-        </ul>
 
-        <h1> Task for the day</h1>
+            </ul>
+            
+            <ul>
+                <?php foreach ($person as $key => $feature)  : ?>
 
-        <!-- <ul>
-            <?php foreach ($task as $heading => $value) : ?>
+                    <li><strong><?= $key; ?></strong><br> <?= $feature; ?></li>
+
+                <?php endforeach; ?>
+
+
+            </ul>
+
+            <h1> Task for the day</h1>
+
+            <!-- <ul>
+                <?php foreach ($task as $heading => $value) : ?>
+                    <li>
+                        <strong><?= ucwords($heading); ?>:</strong> <?= $value; ?>
+                    </li>
+                <?php endforeach; ?>
+
+            </ul> -->
+
+            <ul>
                 <li>
-                    <strong><?= ucwords($heading); ?>:</strong> <?= $value; ?>
-                </li>
-            <?php endforeach; ?>
+                    <strong>Name: </strong> <?= $task['title']; ?>
+                </li>                        
 
-        </ul> -->
+                <li>
+                    <strong>Due Date: </strong> <?= $task['due']; ?>
+                </li>  
 
-        <ul>
-            <li>
-                <strong>Name: </strong> <?= $task['title']; ?>
-            </li>                        
+                <li>
+                    <strong>Personal Responsible: </strong> <?= $task['assigned_to']; ?>
+                </li>  
 
-            <li>
-                <strong>Due Date: </strong> <?= $task['due']; ?>
-            </li>  
-
-            <li>
-                <strong>Personal Responsible: </strong> <?= $task['assigned_to']; ?>
-            </li>  
-
-            <li>
-                <strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
-            </li>  
-
-
+                <li>
+                    <strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+                </li>  
+            </ul>
+        </header>
     </body>
 </html>
