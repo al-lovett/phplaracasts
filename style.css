@@ -17,5 +17,6 @@ ul {
 section {
   height: 300px;
   width: 300px;
-  background-color: lightblue;
+  background: lightblue;
+  position: center;
 }

@@ -25,12 +25,13 @@
             </ul>            
         </header>
         <section> 
-
-            <?php
-                foreach ($names as $name) {
-                    echo "<li>$name</li>";
-                }
-            ?>
+            <ul>
+                <?php
+                    foreach ($names as $name) {
+                        echo "<li>$name</li>";
+                    }
+                ?>
+            </ul>
 
         </section>
     </body>
