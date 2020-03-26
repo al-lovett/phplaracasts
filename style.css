@@ -7,3 +7,15 @@ header {
 ul {
   list-style-type: none;
 }
+
+#box1 {
+  background-color: chartreuse;
+  height: 400px;
+  width: 400px;
+}
+
+section {
+  height: 300px;
+  width: 300px;
+  background-color: lightblue;
+}
