@@ -24,7 +24,7 @@
                
             </ul>            
         </header>
-        <section> 
+        <div=""> 
             <ul>
                 <?php
                     foreach ($names as $name) {
@@ -33,6 +33,6 @@
                 ?>
             </ul>
 
-        </section>
+        </article>
     </body>
 </html>

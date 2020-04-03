@@ -8,15 +8,16 @@ ul {
   list-style-type: none;
 }
 
-#box1 {
+/* #box1 {
   background-color: chartreuse;
-  height: 400px;
-  width: 400px;
-}
+  height: 50%;
+  width: 50%;
+  text-align: center;
+} */
 
-section {
-  height: 300px;
-  width: 300px;
-  background: lightblue;
-  position: center;
+article {
+  background-color: aqua;
+
+
+  
 }
