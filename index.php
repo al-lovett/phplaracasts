@@ -36,7 +36,7 @@ unset($person['age']);
 // die(var_dump($person));
 
 $task =[
-    'title' => 'get nano chips removed',
+    'title' => 'get nano chips removed step 8 in php practitioner',
     'due' => 'today',
     'assigned_to' => 'Al',
     'completed' => true 

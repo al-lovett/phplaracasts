@@ -34,5 +34,35 @@
             </ul>
 
         </article>
+
+
+
+        <h1> Task for the day</h1>
+
+             <ul>
+                <?php foreach ($task as $heading => $value) : ?>
+                    <li>
+                        <strong><?= ucwords($heading); ?>:</strong> <?= $value; ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+
+            <ul>
+                <li>
+                    <strong>Name: </strong> <?= $task['title']; ?>
+                </li>                        
+
+                <li>
+                    <strong>Due Date: </strong> <?= $task['due']; ?>
+                </li>  
+
+                <li>
+                    <strong>Personal Responsible: </strong> <?= $task['assigned_to']; ?>
+                </li>  
+
+                <li>
+                    <strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+                </li>  
+            </ul> 
     </body>
 </html>
