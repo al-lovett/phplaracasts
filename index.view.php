@@ -37,7 +37,7 @@
 
 
 
-        <h1> Task for the day</h1>
+        <h1> Task for the day 1</h1>
 
              <ul>
                 <?php foreach ($task as $heading => $value) : ?>
@@ -47,21 +47,23 @@
                 <?php endforeach; ?>
             </ul>
 
+        <h2> Task for the day 2</h2>
+            
             <ul>
                 <li>
-                    <strong>Name: </strong> <?= $task['title']; ?>
+                    <strong>Name: </strong> <?= $task2['title']; ?>
                 </li>                        
 
                 <li>
-                    <strong>Due Date: </strong> <?= $task['due']; ?>
+                    <strong>Due Date: </strong> <?= $task2['due']; ?>
                 </li>  
 
                 <li>
-                    <strong>Personal Responsible: </strong> <?= $task['assigned_to']; ?>
+                    <strong>Personal Responsible: </strong> <?= $task2['assigned_to']; ?>
                 </li>  
 
                 <li>
-                    <strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+                    <strong>Status: </strong> <?= $task2['completed'] ? 'Complete' : 'Incomplete'; ?>
                 </li>  
             </ul> 
     </body>

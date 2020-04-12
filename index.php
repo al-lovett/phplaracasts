@@ -42,4 +42,12 @@ $task =[
     'completed' => true 
 ]; // title, due, assigned_to, completed
 
+
+$task2 =[
+    'title' => 'cleanse white rabbit',
+    'due' => 'someday',
+    'assigned_to' => 'Al',
+    'completed' => false
+]; // title, due, assigned_to, completed
+
 require 'index.view.php';
