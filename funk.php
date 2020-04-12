@@ -36,7 +36,35 @@ $myArray[] = "Bird Person";
 
 print_r($myArray);
 
+echo $myArray[3];
 
+echo "<br><br>";
+
+$anotherArray[0] = "SCP-0001";
+
+$anotherArray[1] = "SCP-21";
+
+$anotherArray[2] = "SCP-305";
+
+$anotherArray[3] = "SCP-1482";
+
+$anotherArray["The Foundation"] = "Special Parsec Divison";
+
+print_r($anotherArray);
+
+echo "<br><br>";
+
+$thirdArray = array(
+
+  "France" => "French",
+  "USA" => "English",
+  "Botswanna" => "Setswana");
+
+unset($thirdArray["USA"]);
+
+print_r($thirdArray);
+
+echo sizeof($thirdArray);
 
 
 
